@@ -20,6 +20,7 @@ body{
    background-color: white;
     font-family:'Times New Roman', Times, serif;
     text-decoration: underline;
+    margin-top: 12px;
 }
 .questions{
     margin: 3rem auto;
@@ -81,16 +82,17 @@ button{
     font-size: 1.5rem;
     border-radius: 50px;
     color: rgba(255, 255, 255, 0.98);
-    background: rgba(1, 25, 53, 0.82);
+    background: rgba(74, 3, 155, 0.82);
     font-size: 40px;
-    margin-top: 16%;
+    margin-top: 22%;
+    margin-left: -50px;
 }
 
 button:active{
    background-color: white;
 }
 
-#scoreboard,#answerBox{
+#scorecard,#answerBox{
     width: 20rem;
     background-color: white;
     padding: 2rem;
@@ -139,17 +141,14 @@ h2 {
        
    }
 
-
-
-
 .hide {
     display:none;
 }
 
-#jsTimer{
-    text-align: center;
+h3 {
+    font-size: 60px;
+    float: right;margin-top: -10%;
+    margin-right: 5%;
 }
 
-#timer {
-    background-color: red;
-}
+

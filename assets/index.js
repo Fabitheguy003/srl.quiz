@@ -37,9 +37,11 @@ var next= document.querySelector('.next');
 var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
 var i=0;
-var score= 0;
+var score = 0;
+var counter = 15;
 
-//function to display quiz questions
+
+//function to display questions
 function displayQuestion(){
   for(var a=0;a<span.length;a++){
       span[a].style.background='none';
@@ -75,22 +77,32 @@ function nextQuestion(){
   else{
       points.innerHTML= score+ '/'+ questionBox.length;
       quizContainer.style.display= 'none';
-      scoreboard.style.display= 'block'
+      scorecard.style.display= 'block'
   }
 }
 
 //Back to Quiz button event
-function backToQuiz(){
+function RestartQuiz(){
   location.reload();
 }
 
 displayQuestion();
 
 
-startButton.addEventListener('click', startQuiz)
+startButton.addEventListener('click', StartQuiz)
 
-function startQuiz() {
-  
+function StartQuiz() {
+
   startButton.classList.add('hide')
   quizContainer.classList.remove('hide')
 }
+
+setInterval( function(){
+    counter--;
+
+    if( counter >= 0){
+      id = document.getElementById("count");
+      id.innerHTML = counter; 
+    }
+}, 1000); 
+
