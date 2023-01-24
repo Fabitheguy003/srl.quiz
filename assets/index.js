@@ -7,7 +7,7 @@ var questionBox= [
   {
       question : 'The condition in an if / else statement is enclosed with _______.',
       choice : ['quotes','curly brackets','parentheses','square brackets'],                          
-      answer : 'parerntheses'
+      answer : 'parentheses'
   },
   {
       question : 'Arrays in javascript can be used to store _______.',
@@ -25,12 +25,11 @@ var questionBox= [
       answer : 'for loops'
   }
 ]
-
 var startButton = document.getElementById('start-btn')
 var question= document.getElementById('question');
 var quizContainer= document.getElementById('quiz-container');
 var scorecard= document.getElementById('scorecard');
-var  choice0= document.getElementById('choice0');
+var  choice0= document.getElementById(' choice0');
 var  choice1= document.getElementById(' choice1');
 var  choice2= document.getElementById(' choice2');
 var  choice3= document.getElementById(' choice3');
@@ -40,7 +39,7 @@ var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
 
-//function to display questions
+//function to display quiz questions
 function displayQuestion(){
   for(var a=0;a<span.length;a++){
       span[a].style.background='none';
@@ -51,7 +50,7 @@ function displayQuestion(){
   choice2.innerHTML= questionBox[i]. choice[2];
   choice3.innerHTML= questionBox[i]. choice[3];
   stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBox.length;
-}  
+}
 
 //function to calculate scores
 function Score(e){
@@ -64,4 +63,34 @@ function Score(e){
       document.getElementById(e.id).style;                                    
   }
   setTimeout(nextQuestion,300);
+}
+
+//function to display next question
+function nextQuestion(){
+  if(i<questionBox.length-1)
+  {
+      i=i+1;
+      displayQuestion();
+  }
+  else{
+      points.innerHTML= score+ '/'+ questionBox.length;
+      quizContainer.style.display= 'none';
+      scoreboard.style.display= 'block'
+  }
+}
+
+//Back to Quiz button event
+function backToQuiz(){
+  location.reload();
+}
+
+displayQuestion();
+
+
+startButton.addEventListener('click', startQuiz)
+
+function startQuiz() {
+  
+  startButton.classList.add('hide')
+  quizContainer.classList.remove('hide')
 }
