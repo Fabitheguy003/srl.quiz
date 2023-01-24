@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+   
+
+    <!-- quiz-container -->
+    <div id="quiz-container" class="hide">
+        <h1 id="title">Quiz</h1>
+        <!-- question container -->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="choice"><span id=" choice0" onclick="Score(this)"></span></li>
+                <li class="choice"><span id=" choice1" onclick="Score(this)"></span></li>
+                <li class="choice"><span id=" choice2" onclick="Score(this)"></span></li>
+                <li class="choice"><span id=" choice3" onclick="Score(this)"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+    </div>
