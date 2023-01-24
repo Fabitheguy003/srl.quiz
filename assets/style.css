@@ -111,3 +111,37 @@ button:active{
  #score{
      font-size: 2.5rem;
  }
+
+ #answerBox li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;                              
+}
+
+#answers{
+    margin-top: 1rem;
+}
+
+h2 {
+
+    font-size: 50px;
+}
+
+.start-btn {
+    font-size: 150px;
+    font-weight: bold;
+    padding: 10px 20px;
+    
+   }
+   
+   .controls {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+      
+       
+   }
+
+.hide {
+    display:none;
+}
