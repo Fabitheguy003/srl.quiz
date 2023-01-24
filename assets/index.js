@@ -25,3 +25,17 @@ var questionBox= [
       answer : 'for loops'
   }
 ]
+
+var startButton = document.getElementById('start-btn')
+var question= document.getElementById('question');
+var quizContainer= document.getElementById('quiz-container');
+var scorecard= document.getElementById('scorecard');
+var  choice0= document.getElementById('choice0');
+var  choice1= document.getElementById(' choice1');
+var  choice2= document.getElementById(' choice2');
+var  choice3= document.getElementById(' choice3');
+var next= document.querySelector('.next');
+var points= document.getElementById('score');
+var span= document.querySelectorAll('span');
+var i=0;
+var score= 0;
