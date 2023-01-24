@@ -53,3 +53,15 @@ function displayQuestion(){
   stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBox.length;
 }  
 
+//function to calculate scores
+function Score(e){
+  if(e.innerHTML===questionBox[i].answer && score<questionBox.length)
+  {
+      score= score+1;
+      document.getElementById(e.id).style;
+  }
+  else{
+      document.getElementById(e.id).style;                                    
+  }
+  setTimeout(nextQuestion,300);
+}
