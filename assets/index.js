@@ -39,3 +39,17 @@ var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
+
+//function to display questions
+function displayQuestion(){
+  for(var a=0;a<span.length;a++){
+      span[a].style.background='none';
+  }
+  question.innerHTML= 'Q.'+(i+1)+' '+questionBox[i].question;
+  choice0.innerHTML= questionBox[i]. choice[0];
+  choice1.innerHTML= questionBox[i]. choice[1];
+  choice2.innerHTML= questionBox[i]. choice[2];
+  choice3.innerHTML= questionBox[i]. choice[3];
+  stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBox.length;
+}  
+
