@@ -37,7 +37,7 @@ body{
     margin-bottom: 0.5rem;
     border-bottom: solid 0.1rem rgb(0, 0, 0);
     width: 400px;
-    background: rgb(137, 29, 158);
+    background: rgb(7, 1, 187);
     border-radius: 10px;
     color: white;
     margin-left: 39%;
@@ -66,7 +66,7 @@ span{
     margin-top: 2.5rem;
 }
 #stat{
-    margin-top: 1.9rem;
+    margin-top: 1.7rem;
     color: rgb(0, 0, 0);
     margin-left: 36%;
     font-size: 29px;
@@ -81,8 +81,8 @@ button{
     outline: none;
     font-size: 1.5rem;
     border-radius: 50px;
-    color: rgba(255, 255, 255, 0.98);
-    background: rgba(74, 3, 155, 0.82);
+    color: rgb(255, 47, 47);;
+    background: rgba(8, 0, 116, 0.82);
     font-size: 40px;
     margin-top: 22%;
     margin-left: -50px;
@@ -130,8 +130,7 @@ h2 {
     font-size: 150px;
     font-weight: bold;
     padding: 10px 20px;
-    
-   }
+}
    
    .controls {
        display:flex;
@@ -151,4 +150,14 @@ h3 {
     margin-right: 5%;
 }
 
+.div .result{
+    margin-bottom: 90%;
+}
 
+h5 {
+font-size: 29px;
+margin-top: 20px;
+text-align:center;
+text-decoration: overline;
+font-family: 'Trebuchet MS';
+}

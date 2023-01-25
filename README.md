@@ -1,1 +1,2 @@
-# srl.quiz-
+# srl.quiz- JAvascript Squiz
+A built quiz that has a timer, with multiple choices questions to answer in the intervals of fu=ifteen seconds. Moreover the quiz will let you know if the choices you choose are correct or wrong. To finalize it will show you yuor score at the end of the quiz, and if you wish to restart the quiz it has a restart button which will get you back to the start button, if you want to retake the quiz.

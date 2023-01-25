@@ -55,16 +55,29 @@ function displayQuestion(){
 }
 
 //function to calculate scores
+const result = document.getElementById("result");
+
 function Score(e){
   if(e.innerHTML===questionBox[i].answer && score<questionBox.length)
   {
       score= score+1;
       document.getElementById(e.id).style;
+      result.innerHTML = "Correct!";
+      console.log(" :Correct!");  
   }
   else{
-      document.getElementById(e.id).style;                                    
+      document.getElementById(e.id).style;
+      result.innerHTML = "Wrong!";
+      console.log("Wrong!");  
+
+
+
   }
   setTimeout(nextQuestion,300);
+
+
+
+  
 }
 
 //function to display next question
@@ -73,6 +86,8 @@ function nextQuestion(){
   {
       i=i+1;
       displayQuestion();
+      result.innerHTML = " ";                                    
+
   }
   else{
       points.innerHTML= score+ '/'+ questionBox.length;
